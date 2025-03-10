@@ -1,3 +1,4 @@
+/*2577390*/
 var Cname;
 var offName;
 var Capital;
@@ -7,6 +8,8 @@ var flag;
 var flagalt;
 var neighbours;
 let ULneighbours;
+
+
 
 function search() {
     Cname = document.getElementById("inputTxt").value;
