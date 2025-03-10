@@ -78,18 +78,17 @@ function showStuff(json) {
 }
 
 function getNeighbours(json) {
-    // Clear the previous neighbours list before adding new data
+
     ULneighbours.innerHTML = "";
 
     json.forEach(element => {
         if (element.hasOwnProperty('borders') && element['borders'].length > 0) {
-            // If there are neighboring countries, loop through each code
+
             var neighs = element['borders'];
             neighs.forEach(code => {
-                getNeighbourData(code); // Fetch the neighbor's data
+                getNeighbourData(code); 
             });
         } else {
-            // If no borders, display a message
             const noNeighbours = document.createElement('li');
             noNeighbours.textContent = "No neighboring countries found.";
             ULneighbours.appendChild(noNeighbours);

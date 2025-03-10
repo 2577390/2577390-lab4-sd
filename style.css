@@ -1,0 +1,101 @@
+/* General body and background styling */
+body {
+    background-color: gray;;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+main {
+    padding: 20px;
+}
+
+/* Input section styling */
+#input-info {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#inputTxt {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid navy;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: white;
+    width: 200px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: navy;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #1d1d1d;
+}
+
+/* Country info section */
+#country-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: navy;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#flag {
+    max-width: 200px;
+    max-height: 120px;
+    margin-top: 20px;
+}
+
+/* Bordering countries section */
+#bordering-countries {
+    text-align: center;
+}
+
+ul#neighbours {
+    list-style: none;
+    padding: 0;
+}
+
+ul#neighbours li {
+    background-color: #2b2b2b;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+ul#neighbours li img {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+
+ul#neighbours li span {
+    flex-grow: 1;
+}
